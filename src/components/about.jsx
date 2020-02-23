@@ -11,7 +11,8 @@ class About extends Component {
           Hi, I'm Hamza. I am currently in my third year at York University for
           Computer Science. I have a love for technology, basketball, and the
           arts. I like working with a full-stack, check out some of my work and
-          skills below!
+          skills below! asdmaosidn asiodnaiosdn aosdnaosndasod dainsdiasnd
+          asndaisopndi aisdnaisopnd
         </p>
       </div>
     );

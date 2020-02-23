@@ -16,7 +16,7 @@ class Header extends Component {
   render() {
     return (
       <Container>
-        <Navbar bg="light" expand="lg">
+        <Navbar sticky="bottom" bg="light" expand="lg">
           <Nav className="ml-auto">
             <Nav.Link href="#home">About</Nav.Link>
             <Nav.Link href="#portfolio">Portfolio</Nav.Link>

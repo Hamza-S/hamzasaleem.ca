@@ -19,7 +19,6 @@ function App() {
         backgroundRepeat: "no-repeat"
       }}
     >
-      <Header />
       <div className="container" id="appContainer">
         <div className="row align-items-start" id="firstRow">
           <About />
