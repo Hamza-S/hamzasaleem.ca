@@ -10,10 +10,6 @@ function App() {
     <div
       className="App"
       style={{
-        backgroundImage:
-          "url(" +
-          "https://images.unsplash.com/photo-1477173860144-6f21cf27086a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80" +
-          ")",
         backgroundPosition: "center",
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat"

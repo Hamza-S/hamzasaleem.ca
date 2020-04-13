@@ -10,7 +10,6 @@ import {
   Button,
   Container
 } from "react-bootstrap";
-import { Link, animateScroll as scroll } from "react-scroll";
 class Header extends Component {
   state = {};
   render() {
