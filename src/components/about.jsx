@@ -5,16 +5,16 @@ class About extends Component {
   render() {
     return (
       <div className="col" id="aboutSec">
-        <h1>Hamza Saleem</h1>
-        <h2>Software Developer</h2>
-        <p>
-          Hi, I'm Hamza. I am currently in my third year at York University for
+        <h1 className="name">Hamza Saleem</h1>
+        <h2 className="title">Software Developer</h2>
+        <p className="info">
+          Hi I'm Hamza. I am currently in my third year at York University for
           Computer Science. I have a love for technology, basketball, and the
           arts. I like working with a full-stack, check out some of my work and
-          skills below! asdmaosidn asiodnaiosdn aosdnaosndasod dainsdiasnd
-          asndaisopndi aisdnaisopnd
+          skills below!
         </p>
-      </div>
+
+      </div >
     );
   }
 }
