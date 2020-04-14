@@ -1,5 +1,6 @@
 import React from "react";
 import logo from "./logo.svg";
+import bg from "./bg.jpg";
 import "./App.css";
 import Header from "./components/header";
 import About from "./components/about";
@@ -12,16 +13,17 @@ function App() {
       style={{
         backgroundPosition: "center",
         backgroundSize: "cover",
-        backgroundRepeat: "no-repeat"
+        backgroundRepeat: "no-repeat",
       }}
     >
       <div className="container" id="appContainer">
         <div className="row align-items-start" id="firstRow">
           <About />
         </div>
-        <div className="row align-items-start" id="secondRow">
+        <div className="row align-items-center" id="secondRow">
           <Footer />
         </div>
+        <Portfolio />
       </div>
     </div>
   );
