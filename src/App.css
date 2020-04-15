@@ -34,8 +34,8 @@
   }
   #aboutSec {
     background-image: url("bg.jpg");
-    background-size: 100% 150vh;
-    background-position: 0% 25%;
+    background-size: 150% 130vh;
+    background-position: 40% 29%;
     display: flex;
     flex-direction: column;
     align-items: center;
