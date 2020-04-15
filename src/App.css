@@ -1,52 +1,46 @@
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 769px) {
   .App {
     flex-direction: column;
     align-items: center;
     min-height: 100vh;
     font-family: "Open Sans", sans-serif;
     background-color: rgba(255, 255, 255, 1);
-  }
-  a {
-    text-decoration: none;
-  }
-  a:link,
-  a:visited {
-    color: inherit;
-  }
-  a:hover {
-    color: inherit;
+    width: 100%;
   }
   .links li {
     margin-left: 10px;
   }
   .name {
     font-size: 70px;
-    color: rgba(47, 53, 66, 1);
+    color: rgb(21, 28, 37);
   }
   .title {
     font-size: 40px;
-    color: rgba(47, 53, 66, 1);
+    color: rgb(21, 28, 37);
   }
   .heading {
-    margin-top: 8vh;
+    display: block;
+    text-align: center;
   }
   .skyline {
     text-align: center;
     margin-bottom: 0;
+    max-width: 100%;
+    height: auto;
   }
 
   #icons {
     font-size: 36px;
   }
   #aboutSec {
-    align-content: center;
-    white-space: pre-line;
-    min-height: 36vh;
     background-image: url("bg.jpg");
-    background-size: cover;
-    background-position-y: -45vh;
-    background-repeat: no-repeat;
-    text-align: center;
+    background-size: 100% 150vh;
+    background-position: 0% 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 40vh;
   }
   #info {
     top: 1.5vh;
@@ -72,13 +66,6 @@
     height: 50vh;
     white-space: pre-line;
   }
-  #thirdRow {
-    max-width: 80vw;
-    float: none;
-    margin: 0 auto;
-    align-content: center;
-    text-align: center;
-  }
   #project {
     padding-top: 10px;
     margin-left: 40px;
@@ -88,26 +75,44 @@
 }
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
+  .App {
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    font-family: "Open Sans", sans-serif;
+    background-color: rgba(255, 255, 255, 1);
+    width: 100%;
+  }
+  .col {
+    min-width: 100%;
+  }
+  #aboutSec {
+    background-color: rgba(87, 101, 116, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 22vh;
+  }
+  .name {
+    font-size: 55px;
+    color: rgba(247, 241, 227, 1);
+  }
+  .title {
+    margin-top: -1.5vh;
+    font-size: 35px;
+    color: rgba(247, 241, 227, 1);
+  }
+  .heading {
+    display: block;
+    text-align: center;
+  }
   #project {
     min-width: 100%;
     margin-bottom: 10px;
     padding-top: 10px;
     background-color: rgba(245, 246, 250, 0.8);
     min-height: 40vh;
-  }
-  #aboutSec {
-    min-width: 100%;
-    align-content: center;
-    white-space: pre-line;
-    background-image: url("bg.jpg");
-    background-size: cover;
-    background-position-y: -45vh;
-    background-repeat: no-repeat;
-    text-align: center;
-  }
-  #heading {
-    min-width: 100%;
-    margin-top: 8vh;
   }
   #info {
     top: 1.5vh;
@@ -120,20 +125,21 @@
     font-size: 18px;
     margin-bottom: 5vh;
   }
+
   #buttons {
     float: none;
     margin: 0 auto;
     align-content: center;
     max-width: fit-content;
   }
-  a {
-    text-decoration: none;
-  }
-  a:link,
-  a:visited {
-    color: inherit;
-  }
-  a:hover {
-    color: inherit;
-  }
+}
+a {
+  text-decoration: none;
+}
+a:link,
+a:visited {
+  color: inherit;
+}
+a:hover {
+  color: inherit;
 }
