@@ -23,7 +23,7 @@ class Portfolio extends Component {
         </div>
         <div className="col" id="project">
           <h2>
-            nba-hub (under construction){" "}
+            nba-hub<h7 id="construct"> (under construction)</h7>{" "}
             <a href="https://github.com/Hamza-S">
               <i class="fa fa-github" id="icon2"></i>
             </a>{" "}
@@ -42,7 +42,7 @@ class Portfolio extends Component {
         </div>
         <div className="col" id="project">
           <h2>
-            blog (under construction){" "}
+            blog<h7 id="construct"> (under construction)</h7>{" "}
             <a href="https://github.com/Hamza-S">
               <i class="fa fa-github" id="icon2"></i>
             </a>{" "}
