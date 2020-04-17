@@ -6,12 +6,8 @@ class About extends Component {
     return (
       <div className="col" id="aboutSec">
         <div className="heading">
-          <h1 className="name">
-            <b>Hamza Saleem</b>
-          </h1>
-          <h2 className="title">
-            <b> Software Developer</b>
-          </h2>
+          <h1 className="name">Hamza Saleem</h1>
+          <h2 className="title">Software Developer</h2>
         </div>
       </div>
     );

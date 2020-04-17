@@ -21,19 +21,20 @@
   }
   .name {
     font-size: 70px;
-    color: rgba(25, 42, 86, 1);
+    color: black;
   }
   .title {
-    font-size: 40px;
-    color: rgba(25, 42, 86, 1);
+    font-size: 45px;
+    color: black;
   }
   .heading {
     display: block;
     text-align: center;
+    margin-bottom: ;
   }
 
   #icons {
-    font-size: 36px;
+    font-size: 25px;
   }
   #icon2 {
     font-size: 30px;
@@ -104,7 +105,8 @@
     margin-top: 10px;
     max-width: 30vw;
     background-color: rgba(245, 246, 250, 0.8);
-    min-height: 33vh;
+    min-height: 28vh;
+    max-height: 33vh;
     display: flex;
     flex-direction: column;
   }
@@ -115,13 +117,16 @@
     width: fit-content;
     font-size: 13px;
     padding-left: 2px;
+    padding-top: 1px;
+    padding-bottom: 1px;
     padding-right: 3px;
     margin-right: 5px;
   }
   .techs {
     position: absolute;
     bottom: 0;
-    margin-bottom: 11vh;
+    margin-bottom: 7vh;
+    height: fit-content;
   }
 }
 @media only screen and (max-width: 768px) {
