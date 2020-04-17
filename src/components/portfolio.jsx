@@ -13,6 +13,9 @@ class Portfolio extends Component {
           </p>
         </div>
         <div className="col" id="project">
+          <a href="https://github.com/Hamza-S">
+            <i class="fa fa-github" id="icons"></i>
+          </a>
           <h2>nba-hub</h2>
           <p>
             An nba score app that tells you live stats and scores from ongoing

@@ -5,28 +5,23 @@
     min-height: 100vh;
     font-family: "Open Sans", sans-serif;
     background-color: rgba(255, 255, 255, 1);
-    width: 100%;
+    width: 100vw;
+    max-width: 100%;
   }
   .links li {
     margin-left: 10px;
   }
   .name {
     font-size: 70px;
-    color: rgb(21, 28, 37);
+    color: rgba(25, 42, 86, 1);
   }
   .title {
     font-size: 40px;
-    color: rgb(21, 28, 37);
+    color: rgba(25, 42, 86, 1);
   }
   .heading {
     display: block;
     text-align: center;
-  }
-  .skyline {
-    text-align: center;
-    margin-bottom: 0;
-    max-width: 100%;
-    height: auto;
   }
 
   #icons {
@@ -34,8 +29,8 @@
   }
   #aboutSec {
     background-image: url("bg.jpg");
-    background-size: 150% 130vh;
-    background-position: 40% 29%;
+    background-size: 100vw 130vh;
+    background-position: 10% 29%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -60,17 +55,45 @@
     max-width: fit-content;
   }
   #appContainer {
+    padding: 0;
     position: relative;
-    min-width: 100vw;
+    width: 100vw;
+    max-width: 100%;
     min-height: 50vh;
     height: 50vh;
     white-space: pre-line;
   }
+  #secondRow {
+    margin: 0;
+    width: 100vw;
+    max-width: 100%;
+  }
+  #thirdRow {
+    margin: 0;
+    width: 100vw;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  #firstRow {
+    margin: 0;
+    width: 100vw;
+    max-width: 100%;
+  }
   #project {
-    padding-top: 10px;
-    margin-left: 40px;
+    outline-color: rgba(25, 42, 86, 0.5);
+    outline-width: 0.1px;
+    outline-style: solid;
+    padding-top: 20px;
+    margin: 40px;
+    max-width: 30vw;
     background-color: rgba(245, 246, 250, 0.8);
     min-height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -95,12 +118,12 @@
     height: 22vh;
   }
   .name {
-    font-size: 55px;
+    font-size: 40px;
     color: rgba(247, 241, 227, 1);
   }
   .title {
     margin-top: -1.5vh;
-    font-size: 35px;
+    font-size: 30px;
     color: rgba(247, 241, 227, 1);
   }
   .heading {
@@ -109,10 +132,16 @@
   }
   #project {
     min-width: 100%;
-    margin-bottom: 10px;
-    padding-top: 10px;
+    outline-color: rgba(25, 42, 86, 0.5);
+    outline-width: 0.1px;
+    outline-style: solid;
+    padding-top: 20px;
     background-color: rgba(245, 246, 250, 0.8);
     min-height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
   #info {
     top: 1.5vh;
@@ -127,6 +156,7 @@
   }
 
   #buttons {
+    outline: none;
     float: none;
     margin: 0 auto;
     align-content: center;
