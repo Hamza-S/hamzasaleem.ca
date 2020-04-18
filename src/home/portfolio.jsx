@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 
 class Portfolio extends Component {
-  state = {};
   render() {
     return (
       <div className="row align-items-center" id="thirdRow">
