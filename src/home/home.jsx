@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 
-import About from "../components/about";
-import Portfolio from "../components/portfolio";
-import Footer from "../components/footer";
+import About from "../home/about";
+import Portfolio from "../home/portfolio";
+import Footer from "../home/footer";
 class Home extends Component {
   render() {
     return (

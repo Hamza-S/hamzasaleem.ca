@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 class Portfolio extends Component {
   state = {};
@@ -42,7 +43,8 @@ class Portfolio extends Component {
         </div>
         <div className="col" id="project">
           <h2>
-            blog<h7 id="construct"> (under construction)</h7>{" "}
+            <Link to="/blog">blog</Link>
+            <h7 id="construct"> (under construction)</h7>{" "}
             <a href="https://github.com/Hamza-S">
               <i class="fa fa-github" id="icon2"></i>
             </a>{" "}
