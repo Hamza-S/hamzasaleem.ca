@@ -123,7 +123,7 @@
   .techs {
     position: absolute;
     bottom: 0;
-    margin-bottom: 7vh;
+    margin-bottom: 10%;
     height: fit-content;
   }
 }
@@ -172,7 +172,6 @@
     min-height: 40vh;
   }
   .tag {
-    margin-top: 5vh;
     background-color: rgba(25, 42, 86, 1);
     color: white;
     width: fit-content;
