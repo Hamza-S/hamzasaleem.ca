@@ -1,9 +1,10 @@
 import React, { Component } from "react";
+import PostContainer from "./PostContainer";
 class Blog extends Component {
   render() {
     return (
-      <div>
-        <h1>Welcome to my blog</h1>
+      <div id="Blog">
+        <PostContainer />
       </div>
     );
   }

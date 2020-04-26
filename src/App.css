@@ -21,11 +21,11 @@
   }
   .name {
     font-size: 70px;
-    color: black;
+    color: rgba(247, 241, 227, 1);
   }
   .title {
     font-size: 45px;
-    color: black;
+    color: rgba(247, 241, 227, 1);
   }
   .heading {
     display: block;
@@ -39,14 +39,12 @@
     color: #273c75;
   }
   #aboutSec {
-    background-image: url("bg.jpg");
-    background-size: 100vw 130vh;
-    background-position: 10% 29%;
+    background-color: rgba(87, 101, 116, 1);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 40vh;
+    height: 35vh;
   }
   #info {
     top: 1.5vh;

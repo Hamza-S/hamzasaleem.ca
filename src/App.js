@@ -2,6 +2,7 @@ import React from "react";
 import logo from "./logo.svg";
 import bg from "./bg.jpg";
 import "./App.css";
+import "./blog/page_blog.css";
 import Home from "./home/home";
 import Blog from "./blog/blog";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
