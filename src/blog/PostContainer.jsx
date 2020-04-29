@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Post from "./Post.jsx";
 class PostContainer extends Component {
   render() {
     return (
@@ -15,6 +16,7 @@ class PostContainer extends Component {
             about.
           </p>
         </div>
+        <Post />
       </div>
     );
   }
