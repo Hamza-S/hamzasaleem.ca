@@ -1,1 +1,1 @@
-Portfolio & blog website using React
+Portfolio & blog website using React, Express, and postgreSQL. 
