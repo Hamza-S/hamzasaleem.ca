@@ -28,7 +28,7 @@ class PostContainer extends Component {
       .reverse()
       .map(function (posts) {
         return [
-          <div className="row align-items-center" id="blogfirstRow">
+          <div className="row align-items-center" id="post">
             <h1 id="postTitle"> {posts.title}</h1>
             <h2 id="postDate">{posts.date}</h2>
             {ReactHtmlParser(posts.body)}

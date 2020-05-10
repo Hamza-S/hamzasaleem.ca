@@ -2,21 +2,23 @@
   #Blog {
     flex-direction: column;
     align-items: center;
-    min-height: 100vh;
     font-family: "Open Sans", sans-serif;
     background-color: rgba(178, 190, 195, 1);
     margin: 0;
     width: 100vw;
-    max-width: 100%;
+    height: auto;
+    overflow: auto;
   }
   #postContainer {
     font-family: "Open Sans";
     background-color: white;
     min-width: 55vw;
-    min-height: 100vh;
+
+    height: 100%;
     outline: black;
     outline-width: 1px;
     outline-style: solid;
+    overflow: auto;
   }
   #blogfirstRow {
     float: none;
@@ -25,6 +27,7 @@
     max-width: fit-content;
     flex-direction: column;
   }
+
   #title {
     margin-top: 2vh;
     font-weight: 700;
@@ -37,6 +40,14 @@
     margin-bottom: 5vh;
   }
 
+  #post {
+    float: none;
+    margin: 0 auto;
+    margin-bottom: 8vh;
+    align-content: center;
+    max-width: fit-content;
+    flex-direction: column;
+  }
   #postTitle {
     font-size: 30x;
   }
@@ -51,28 +62,65 @@
 }
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
-  .App {
-    margin: 0;
-    padding: 0;
-    flex-direction: column;
-    align-items: center;
-    min-height: 100vh;
-    max-height: 100vh;
-    font-family: "Open Sans", sans-serif;
-    background-color: rgba(255, 255, 255, 1);
-    width: 100vw;
-    max-width: 100%;
-  }
   #Blog {
     flex-direction: column;
     align-items: center;
-    min-height: 100vh;
     font-family: "Open Sans", sans-serif;
-    background-color: rgba(0, 255, 255, 1);
-    width: 100%;
+    background-color: rgba(178, 190, 195, 1);
+    margin: 0;
+    width: 100vw;
+    height: auto;
+    overflow: auto;
   }
-  .col {
-    min-width: 100%;
+  #postContainer {
+    font-family: "Open Sans";
+    background-color: white;
+    min-width: 55vw;
+
+    height: 100%;
+    outline: black;
+    outline-width: 1px;
+    outline-style: solid;
+    overflow: auto;
+  }
+  #blogfirstRow {
+    float: none;
+    margin: 0 auto;
+    align-content: center;
+    max-width: fit-content;
+    flex-direction: column;
+  }
+
+  #title {
+    margin-top: 2vh;
+    font-weight: 700;
+    font-size: 70px;
+  }
+  #intro {
+    margin-top: 3.5vh;
+    max-width: 90%;
+    text-align: center;
+    margin-bottom: 5vh;
+  }
+
+  #post {
+    float: none;
+    margin: 0 auto;
+    margin-bottom: 8vh;
+    align-content: center;
+    max-width: fit-content;
+    flex-direction: column;
+  }
+  #postTitle {
+    font-size: 30x;
+  }
+  #postDate {
+    font-size: 20px;
+    margin-bottom: 3vh;
+  }
+  #postContent {
+    max-width: 90%;
+    text-indent: 3rem;
   }
 }
 
