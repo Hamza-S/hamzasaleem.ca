@@ -5,6 +5,9 @@ import "./App.css";
 import "./blog/page_blog.css";
 import Home from "./home/home";
 import Blog from "./blog/blog";
+import Admin from "./blog/admin";
+import { Login } from "./blog/login";
+import { ProtectedRoute } from "./blog/protectedroute";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 function App() {
   return (
@@ -21,6 +24,10 @@ function App() {
           <Route path="/blog">
             <Blog />
           </Route>
+          <Route path="/login">
+            <Login />
+          </Route>
+          <ProtectedRoute exact path="/admin" component={Admin} />
           <Route path="/">
             <Home />
           </Route>

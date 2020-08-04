@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import axios from "axios";
 import ReactHtmlParser, {
   processNodes,
   convertNodeToElement,
@@ -8,13 +9,13 @@ import ReactHtmlParser, {
 class PostContainer extends Component {
   constructor(props) {
     super(props);
-
     this.state = { posts: [] };
   }
 
   fetchPosts() {
-    fetch("http://localhost:9000/get_posts")
-      .then((res) => res.json())
+    axios
+      .get("http://localhost:9000/get_posts")
+      .then((res) => res.data)
       .then((res) => this.setState({ posts: res }));
   }
 
