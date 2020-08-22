@@ -1,13 +1,12 @@
 import React, { Component } from "react";
 import PostContainer from "./PostContainer";
-class Blog extends Component {
-  render() {
+
+const Blog = () => {
     return (
       <div id="Blog">
         <PostContainer />
       </div>
     );
-  }
-}
+};
 
 export default Blog;

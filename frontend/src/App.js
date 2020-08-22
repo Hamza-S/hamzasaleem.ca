@@ -6,7 +6,7 @@ import "./blog/page_blog.css";
 import Home from "./home/home";
 import Blog from "./blog/blog";
 import Admin from "./blog/admin";
-import { Login } from "./blog/login";
+import Login from "./blog/login";
 import { ProtectedRoute } from "./blog/protectedroute";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 function App() {
