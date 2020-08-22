@@ -5,8 +5,6 @@ require("dotenv").config();
 const user = process.env.ADMIN_USER;
 const pass = process.env.ADMIN_PASS;
 
-/* GET users listing. */
-
 router.post("/", function (req, res, next) {
   if (req.body.user === user && req.body.pass === pass) {
     res.send("valid");

@@ -14,7 +14,6 @@ class Login extends Component {
   }
 
   redirect = () => {
-    console.log("asdasdasdasd");
     this.props.history.push("/admin");
   };
 
