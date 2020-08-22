@@ -3,6 +3,7 @@ import axios from "axios";
 class Auth {
   constructor() {
     this.authenticated = false;
+    this.login = this.login.bind(this);
   }
 
   login(user, pass) {
@@ -10,10 +11,10 @@ class Auth {
       user: user,
       pass: pass
     })
-    .then(function (res) {
+    .then( (res) => {
       this.setAdmin()
       if (res === "valid"){
-        
+        this.authenticated = true;
       }
     
     })
