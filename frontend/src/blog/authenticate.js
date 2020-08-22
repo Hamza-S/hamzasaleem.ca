@@ -8,23 +8,24 @@ class Auth {
   }
 
   async login(user, pass) {
-    const res = await axios.post('http://localhost:9000/auth', {
-      user: user,
-      pass: pass
-    })
-    .then( (res) => {
-      if (res.data == "valid") {this.setAdmin();}
-      console.log(this.isAdmin());
-      
-    })
-    .catch(function (error) {
-      console.log(error);
-    });
-    
+    const res = await axios
+      .post("http://localhost:9000/auth", {
+        user: user,
+        pass: pass,
+      })
+      .then((res) => {
+        if (res.data == "valid") {
+          this.setAdmin();
+        }
+        console.log(this.isAdmin());
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
+
     //express call to db to verify credentials and set authenticated to true
-    
   }
-  setAdmin(){
+  setAdmin() {
     this.authenticated = true;
   }
   isAdmin() {

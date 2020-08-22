@@ -8,6 +8,7 @@ import Blog from "./blog/blog";
 import Admin from "./blog/admin";
 import Login from "./blog/login";
 import auth from "./blog/authenticate";
+import { ProtectedRoute } from "./blog/protectedroute";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 function App() {
   return (
@@ -27,9 +28,7 @@ function App() {
           <Route path="/login">
             <Login />
           </Route>
-          <Route path = "/admin">
-            <Admin/>
-          </Route>
+          <ProtectedRoute exact path="/admin" component={Admin} />
           <Route path="/">
             <Home />
           </Route>
