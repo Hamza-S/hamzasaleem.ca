@@ -7,7 +7,7 @@ import Home from "./home/home";
 import Blog from "./blog/blog";
 import Admin from "./blog/admin";
 import Login from "./blog/login";
-import { ProtectedRoute } from "./blog/protectedroute";
+import auth from "./blog/authenticate";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 function App() {
   return (
@@ -27,7 +27,9 @@ function App() {
           <Route path="/login">
             <Login />
           </Route>
-          <ProtectedRoute exact path="/admin" component={Admin} />
+          <Route path = "/admin">
+            <Admin/>
+          </Route>
           <Route path="/">
             <Home />
           </Route>

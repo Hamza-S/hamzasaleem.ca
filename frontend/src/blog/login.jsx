@@ -16,15 +16,17 @@ class Login extends Component {
   }
 
   redirect = () =>  {
+    console.log("asdasdasdasd");
     this.props.history.push("/admin");
   }
   
   handleSubmit = (event) => {
     event.preventDefault();
     const data = this.state;
-    auth.login(data.user, data.pass) 
-    console.log(auth.isAdmin());
-    this.redirect();
+    auth.login(data.user, data.pass).then(() => {
+      if (auth.isAdmin()) { this.redirect()}
+    })
+    
    
   
   }
