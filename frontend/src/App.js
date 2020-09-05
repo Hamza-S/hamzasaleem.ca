@@ -13,6 +13,11 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 function App() {
   return (
     <Router>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap"
+        rel="stylesheet"
+      ></link>
+
       <div
         className="App"
         style={{

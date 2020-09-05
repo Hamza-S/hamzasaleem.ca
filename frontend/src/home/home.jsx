@@ -1,19 +1,16 @@
 import React, { Component } from "react";
 
-import About from "../home/about";
-import Portfolio from "../home/portfolio";
-import Footer from "../home/footer";
+import { Header } from "./header";
+import { HomeNav } from "./nav";
 class Home extends Component {
   render() {
     return (
       <div className="container" id="appContainer">
+        <HomeNav />
         <div className="row align-items-start" id="firstRow">
-          <About />
+          <Header />
         </div>
-        <div className="row align-items-center" id="secondRow">
-          <Footer />
-        </div>
-        <Portfolio />
+        <div className="row align-items-center" id="secondRow"></div>
       </div>
     );
   }
