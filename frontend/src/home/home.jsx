@@ -2,6 +2,7 @@ import React, { Component } from "react";
 
 import { Header } from "./header";
 import { HomeNav } from "./nav";
+import { About } from "./about";
 class Home extends Component {
   render() {
     return (
@@ -10,7 +11,9 @@ class Home extends Component {
         <div className="row align-items-start" id="firstRow">
           <Header />
         </div>
-        <div className="row align-items-center" id="secondRow"></div>
+        <div className="row align-items-center" id="firstRow">
+          <About />
+        </div>
       </div>
     );
   }

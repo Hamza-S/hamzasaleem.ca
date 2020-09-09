@@ -18,34 +18,27 @@
   }
   .avatar {
     vertical-align: middle;
-    width: 200px;
-    height: 200px;
+    width: 225px;
+    height: 225px;
     border-radius: 50%;
   }
-  .links li {
-    margin-left: 10px;
-  }
   .name {
-    font-size: 55px;
+    font-size: 70px;
     color: rgb(0, 0, 0);
   }
   .title {
-    font-size: 35px;
+    font-size: 45px;
     margin-top: -8px;
     color: rgb(0, 0, 0);
   }
-  .heading {
-    display: block;
-    text-align: center;
-  }
-  #icons {
-    font-size: 25px;
-  }
-  #icon2 {
-    font-size: 30px;
-    color: #273c75;
+  #netLinks {
+    position: absolute;
+    left: 10vw;
+    width: 10vw;
+    height: 30vh;
   }
   #aboutSec {
+    position: relative;
     background-color: #f5f8fa;
     display: flex;
     flex-direction: column;
@@ -54,18 +47,18 @@
     outline-color: rgba(0, 0, 0, 0.911);
     outline-width: 1px;
     outline-style: solid;
-    height: 60vh;
-    padding-top: 5vh;
+    height: 75vh;
+    padding-top: 8vh;
     overflow: hidden;
   }
   #info {
-    top: 1.5vh;
+    top: 2vh;
     float: none;
     margin: 0 auto;
     align-content: center;
     white-space: pre-line;
-    max-width: 40vw;
-    text-align: center;
+    max-width: 27vw;
+    text-align: left;
     font-size: 18px;
     margin-bottom: 5vh;
   }
