@@ -1,9 +1,8 @@
 import React from "react";
 import logo from "./logo.svg";
-import bg from "./bg.jpg";
 import "./App.css";
 import "./blog/page_blog.css";
-import Home from "./home/home";
+import { Home } from "./home/home";
 import Blog from "./blog/blog";
 import Admin from "./blog/admin";
 import Login from "./blog/login";
