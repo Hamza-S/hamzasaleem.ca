@@ -23,13 +23,16 @@
     border-radius: 50%;
   }
   .name {
-    font-size: 80px;
+    font-size: 70px;
     color: rgb(0, 0, 0);
   }
   .title {
-    font-size: 55px;
+    font-size: 45px;
     margin-top: -8px;
     color: rgb(0, 0, 0);
+  }
+  #navBar {
+    padding-right: 10vw;
   }
   #netLinks {
     position: absolute;
@@ -49,7 +52,7 @@
     outline-width: 1px;
     outline-style: solid;
     height: 85vh;
-    padding-top: 12vh;
+    padding-top: 9vh;
     overflow: hidden;
   }
   #info {

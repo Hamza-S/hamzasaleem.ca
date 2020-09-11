@@ -5,14 +5,14 @@ import { animated, useSpring } from "react-spring";
 
 export const Header = () => {
   const name = useSpring({
-    config: { duration: 2000 },
+    config: { duration: 1000 },
     delay: 100,
     opacity: 1,
     from: { opacity: 0 },
   });
   const title = useSpring({
-    config: { duration: 2000 },
-    delay: 2100,
+    config: { duration: 1000 },
+    delay: 800,
     opacity: 1,
     from: { opacity: 0 },
   });
