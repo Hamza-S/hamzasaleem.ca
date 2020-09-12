@@ -19,22 +19,22 @@ export const Header = () => {
 
   return (
     <div className="col" id="aboutSec">
-      <NetLinks />
-      <animated.div style={name}>
-        <h2 className="name">
+      <div id="mainSplash">
+        <NetLinks />
+        <div id="avatarContainer">
           <img src={avatar} alt="Preview" class="avatar" />
-        </h2>
-      </animated.div>
-      <div className="heading">
-        <animated.div style={name}>
-          <h2 className="name">Hamza Saleem</h2>
-        </animated.div>
-        <animated.div style={title}>
-          <h2 className="title">Software Developer</h2>
-        </animated.div>
-      </div>
-      <div className="col" id="info">
-        <p>
+        </div>
+
+        <div className="heading">
+          <animated.div style={name}>
+            <h2 className="name">Hamza Saleem</h2>
+          </animated.div>
+          <animated.div style={title}>
+            <h2 className="title">Software Developer</h2>
+          </animated.div>
+        </div>
+
+        <p id="info">
           Hi I'm Hamza. I am currently in my third year at York University for
           Computer Science. I have a love for technology, basketball, and the
           arts. I like working with a full-stack, check out some of my work and
