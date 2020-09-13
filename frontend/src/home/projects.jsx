@@ -7,7 +7,9 @@ export const Projects = () => {
       <div id="myProject">
         <h3>hamzasaleem.ca & personal blog</h3>
         <p>This website which is used to portray my skills and projects!</p>
+        <div id="projectLinks"></div>
         <ul id="techList">
+          <h5>Technologies used:</h5>
           <li id="techTag">Node.js</li>
           <li id="techTag">React</li>
           <li id="techTag">JavaScript</li>

@@ -47,7 +47,7 @@
   }
   #aboutSec {
     position: relative;
-    background-color: #f5f8fa;
+    background-color: #d9eef3;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -59,7 +59,7 @@
     overflow: hidden;
   }
   #mainSplash {
-    max-width: 40vw;
+    width: fit-content;
     max-height: fit-content;
   }
   #info {
@@ -67,7 +67,7 @@
     float: none;
 
     white-space: pre-line;
-    max-width: 31vw;
+    width: 30em;
     font-size: 18px;
   }
   #appContainer {
@@ -117,7 +117,10 @@
     padding: 3em;
     padding-top: 5em;
     padding-left: 6em;
-    background-color: rgb(238, 238, 238);
+    background-color: #d9f0ff;
+    border-radius: 2em;
+    padding: auto;
+    margin-right: auto;
   }
   #projectSection {
     position: relative;
@@ -127,19 +130,16 @@
     border-left: 1px solid black;
   }
   #techList {
-    width: fit-content;
     margin: auto;
+    width: fit-content;
+    height: fit-content;
     position: absolute;
-    right: 5em;
-    color: white;
-    list-style-type: none;
+    right: 10em;
   }
   #techTag {
     margin-top: 0.1em;
-    background-color: gray;
-    border: 1px solid black;
-    padding: 0.1em;
-    text-align: center;
+    margin-left: 2em;
+    font-size: 16px;
   }
   #homeText {
     max-width: 30vw;
@@ -148,7 +148,7 @@
   #knownTechs {
     position: absolute;
     top: 1vh;
-    right: 0vw;
+    right: 0;
   }
 }
 @media only screen and (max-width: 768px) {
