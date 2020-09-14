@@ -29,12 +29,10 @@
   }
   .name {
     font-size: 70px;
-    color: rgb(0, 0, 0);
   }
   .title {
     font-size: 45px;
     margin-top: -8px;
-    color: rgb(0, 0, 0);
   }
   #navBar {
     padding-right: 10vw;
@@ -46,8 +44,9 @@
     margin-top: 3em;
   }
   #aboutSec {
+    color: white;
     position: relative;
-    background-color: #d9eef3;
+    background-color: #273c75;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -102,6 +101,7 @@
     border-left: 1px solid black;
   }
   #myProjects {
+    color: white;
     margin-top: 5vh;
     min-width: 60%;
     min-height: fit-content;
@@ -117,12 +117,13 @@
     padding: 3em;
     padding-top: 5em;
     padding-left: 6em;
-    background-color: #d9f0ff;
+    background-color: #273c75;
     border-radius: 2em;
     padding: auto;
     margin-right: auto;
   }
   #projectSection {
+    color: black;
     position: relative;
     display: flex;
     flex-direction: row;
@@ -155,62 +156,143 @@
   /* For mobile phones: */
 
   .App {
+    margin: 0;
+    padding: 0;
     flex-direction: column;
     align-items: center;
     min-height: 100vh;
-    font-family: "Open Sans", sans-serif;
+    max-height: 100vh;
+    font-family: "Roboto Slab", serif;
     background-color: rgba(255, 255, 255, 1);
-    width: 100%;
+    width: 100vw;
+    max-width: 100%;
   }
-  .col {
-    min-width: 100%;
+  .avatar {
+    vertical-align: middle;
+    width: 175px;
+    height: 175px;
+    border-radius: 50%;
+  }
+  #avatarContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .name {
+    font-size: 3em;
+  }
+  .title {
+    font-size: 30px;
+    margin-top: -8px;
+  }
+  #navBar {
+  }
+  #netLinks {
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    margin-top: 3em;
   }
   #aboutSec {
-    background-color: rgba(87, 101, 116, 1);
+    width: 100%;
+    color: white;
+    position: relative;
+    background-color: #273c75;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 22vh;
+    outline-color: rgba(0, 0, 0, 0.911);
+    outline-width: 1px;
+    outline-style: solid;
+    height: 85vh;
+    overflow: hidden;
   }
-  .name {
-    font-size: 40px;
-    color: rgba(247, 241, 227, 1);
-  }
-  .title {
-    margin-top: -1.5vh;
-    font-size: 30px;
-    color: rgba(247, 241, 227, 1);
-  }
-  .heading {
-    display: block;
-    text-align: center;
-  }
-  #icons {
-    font-size: 36px;
-  }
-  #icon2 {
-    font-size: 30px;
-    color: #273c75;
+  #mainSplash {
+    width: 100%;
+    max-height: fit-content;
   }
   #info {
-    top: 1.5vh;
+    top: 2vh;
     float: none;
-    margin: 0 auto;
-    align-content: center;
-    white-space: pre-line;
-    min-width: 100%;
-    text-align: center;
-    font-size: 18px;
-    margin-bottom: 5vh;
-  }
 
-  #buttons {
-    outline: none;
-    float: none;
-    margin: 0 auto;
-    align-content: center;
-    max-width: fit-content;
+    white-space: pre-line;
+    width: 100%;
+    font-size: 12px;
+  }
+  #appContainer {
+    padding: 0;
+    position: relative;
+    width: 100vw;
+    max-width: 100%;
+    min-height: 50vh;
+    height: 50vh;
+    white-space: pre-line;
+  }
+  #firstRow {
+    margin: 0;
+    width: 100vw;
+    max-width: 100%;
+    margin-bottom: 15vh;
+  }
+  #bodyRow {
+    width: 100%;
+    margin: 0;
+  }
+  #aboutMe {
+    min-width: 100vw;
+    min-height: fit-content;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+  #myProjects {
+    color: white;
+    margin-top: 5vh;
+    min-width: 100%;
+    min-height: fit-content;
+    text-align: left;
+    align-items: left;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+  #myProject {
+    min-height: 40vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: 4vh;
+    padding: 1em;
+    background-color: #273c75;
+    border-radius: 2em;
+    padding: auto;
+    margin-right: auto;
+  }
+  #projectSection {
+    color: black;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+  }
+  #techList {
+    margin: auto;
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    top: 10em;
+    right: 1.5em;
+  }
+  #techTag {
+    margin-top: 0.1em;
+    margin-right: 0.5em;
+    font-size: 16px;
+    display: inline-block;
+  }
+  #homeText {
+    width: 100%;
+  }
+  #knownTechs {
+    top: 1vh;
+    right: 0;
   }
 }
 #construct {
