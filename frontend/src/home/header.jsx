@@ -35,10 +35,8 @@ export const Header = () => {
         </div>
 
         <p id="info">
-          Hi I'm Hamza. I am currently in my third year at York University for
-          Computer Science. I have a love for technology, basketball, and the
-          arts. I like working with a full-stack, check out some of my work and
-          skills below!
+          Hi there! I'm a software developer based in Toronto, Canada that likes
+          working with full-stack applications, check out some of my work below!
         </p>
       </div>
     </div>

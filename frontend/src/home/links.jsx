@@ -6,10 +6,14 @@ export const NetLinks = () => {
   return (
     <div className="col" id="netLinks">
       <div>
-        <img src={github} alt="Preview" />
+        <button class="socialLink">
+          <img src={github} alt="Preview" href="google.com" />
+        </button>
       </div>
       <div>
-        <img src={linkedin} alt="Preview" />
+        <button class="socialLink">
+          <img src={linkedin} alt="Preview" />
+        </button>
       </div>
     </div>
   );
