@@ -109,7 +109,7 @@
     display: flex;
     font-size: 17px;
     flex-direction: column;
-    min-width: 60%;
+    min-width: 70vw;
     min-height: fit-content;
     text-align: left;
     align-items: left;
@@ -127,14 +127,11 @@
   #myProjects {
     color: white;
     margin-top: 5vh;
-    min-width: 60%;
-    max-width: 60%;
-    min-height: fit-content;
-    text-align: left;
-    align-items: left;
+    max-width: 70vw;
   }
   .myProject {
-    min-height: 50vh;
+    width: 70vw;
+    max-height: 45vh;
     display: flex;
     flex-direction: row;
     margin-top: 4vh;
@@ -198,7 +195,7 @@
   #knownTechs {
     position: absolute;
     top: 3vh;
-    right: 0;
+    right: 5em;
     font-size: 18px;
   }
   #myFooter {
