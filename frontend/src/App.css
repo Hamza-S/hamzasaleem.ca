@@ -16,11 +16,14 @@
     width: 100vw;
     max-width: 100%;
   }
+
+  button:focus {
+    outline: none !important;
+  }
   .avatar {
     vertical-align: middle;
     width: 200px;
     height: 200px;
-    border-radius: 50%;
     border: 3px solid white;
     border-radius: 50%;
   }
@@ -104,6 +107,7 @@
   #aboutMe {
     position: relative;
     display: flex;
+    font-size: 17px;
     flex-direction: column;
     min-width: 60%;
     min-height: fit-content;
@@ -111,28 +115,6 @@
     align-items: left;
     padding-left: 1vw;
     border-left: 1px solid black;
-  }
-  #myProjects {
-    color: white;
-    margin-top: 5vh;
-    min-width: 60%;
-    min-height: fit-content;
-    text-align: left;
-    align-items: left;
-  }
-  .myProject {
-    min-height: 40vh;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    margin-top: 4vh;
-    padding: 3em;
-    padding-top: 5em;
-    padding-left: 6em;
-    background-color: #40739e;
-    border-radius: 2em;
-    padding: auto;
-    margin-right: auto;
   }
   #projectSection {
     color: black;
@@ -142,21 +124,62 @@
     padding-left: 1vw;
     border-left: 1px solid black;
   }
+  #myProjects {
+    color: white;
+    margin-top: 5vh;
+    min-width: 60%;
+    max-width: 60%;
+    min-height: fit-content;
+    text-align: left;
+    align-items: left;
+  }
+  .myProject {
+    min-height: 50vh;
+    display: flex;
+    flex-direction: row;
+    margin-top: 4vh;
+    border: 1px solid black;
+    border-radius: 2em;
+    background-color: #222f3e;
+    padding: 0;
+    margin-right: auto;
+  }
+  .projectLeftside {
+    border-bottom-left-radius: 2em;
+    border-top-left-radius: 2em;
+    border: 1px solid black;
+    width: 50%;
+    padding: 3em;
+    padding-top: 4em;
+    background-color: #222f3e;
+  }
+  .projectRightside {
+    background-position: center;
+    border-top-right-radius: 2em;
+    border-bottom-right-radius: 2em;
+    border: 1px solid black;
+    width: 50%;
+  }
+
   .projectLinks {
     color: white;
     align-content: right;
     width: 10em;
     height: 3em;
-    margin-top: 7em;
+    margin-top: 11em;
     margin-right: 1em;
     border: none;
     border-radius: 1em;
     background-color: #353b48;
   }
+  .projectLinks:hover {
+    background-color: #353b48a6;
+  }
   .linkButton {
     margin-right: 1em;
   }
   .techList {
+    bottom: 9em;
     margin: auto;
     width: fit-content;
     height: fit-content;
@@ -174,8 +197,9 @@
   }
   #knownTechs {
     position: absolute;
-    top: 1vh;
+    top: 3vh;
     right: 0;
+    font-size: 18px;
   }
   #myFooter {
     padding-top: 5em;
@@ -193,8 +217,8 @@
     flex-direction: column;
     text-align: center;
   }
-  #iconCredits {
-    margin-top: 5em;
+  .iconCredits {
+    margin-top: 2em;
   }
 }
 @media only screen and (max-width: 768px) {
