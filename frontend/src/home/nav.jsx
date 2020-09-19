@@ -1,24 +1,24 @@
 import React, { Component } from "react";
 import { Navbar, Nav, NavDropdown } from "react-bootstrap";
+import { animateScroll as scroll, Link } from "react-scroll";
 
 export const HomeNav = () => {
   return (
     <div>
       <Nav className="justify-content-end" activeKey="/home" id="navBar">
         <Nav.Item>
-          <Nav.Link href="/home">
-            <h5>Home</h5>
-          </Nav.Link>
+          <Link duration={300} smooth={true} offset={-50} to="about">
+            <Nav.Link eventKey="link-1">
+              <h5>About</h5>
+            </Nav.Link>
+          </Link>
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link eventKey="link-1">
-            <h5>About</h5>
-          </Nav.Link>
-        </Nav.Item>
-        <Nav.Item>
-          <Nav.Link eventKey="link-1">
-            <h5>Projects</h5>
-          </Nav.Link>
+          <Link duration={300} smooth={true} offset={25} to="project">
+            <Nav.Link eventKey="link-1">
+              <h5>Projects</h5>
+            </Nav.Link>
+          </Link>
         </Nav.Item>
         <Nav.Item>
           <Nav.Link href="/blog">

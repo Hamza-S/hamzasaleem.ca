@@ -194,8 +194,10 @@
   }
   #knownTechs {
     position: absolute;
+    width: fit-content;
     top: 3vh;
     right: 5em;
+    margin-left: 40em;
     font-size: 18px;
   }
   #myFooter {
