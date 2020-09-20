@@ -9,20 +9,20 @@ export const HomeNav = () => {
         <Nav.Item>
           <Link duration={300} smooth={true} offset={-50} to="about">
             <Nav.Link eventKey="link-1">
-              <h5>About</h5>
+              <h6>1. About</h6>
             </Nav.Link>
           </Link>
         </Nav.Item>
         <Nav.Item>
           <Link duration={300} smooth={true} offset={25} to="project">
             <Nav.Link eventKey="link-1">
-              <h5>Projects</h5>
+              <h6>2. Projects</h6>
             </Nav.Link>
           </Link>
         </Nav.Item>
         <Nav.Item>
           <Nav.Link href="/blog">
-            <h5>Blog</h5>
+            <h6>3. Blog</h6>
           </Nav.Link>
         </Nav.Item>
       </Nav>

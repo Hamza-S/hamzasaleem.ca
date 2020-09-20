@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import github from "../github.png";
-import linkedin from "../linkedin.png";
+import github from "../images/github.png";
+import linkedin from "../images/linkedin.png";
 
 export const NetLinks = () => {
   return (

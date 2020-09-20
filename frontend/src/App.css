@@ -1,8 +1,10 @@
 @media screen and (min-width: 769px) {
-  body,
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
   html {
-    margin: 0;
-    padding: 0;
+    width: 100%;
   }
   .App {
     margin: 0;
@@ -14,7 +16,7 @@
     font-family: "Roboto Slab", serif;
     background-color: rgba(255, 255, 255, 1);
     width: 100vw;
-    max-width: 100%;
+    max-width: 100vw;
   }
 
   button:focus {
@@ -40,8 +42,12 @@
     margin-top: -8px;
   }
   #navBar {
-    padding-right: 10vw;
-    border-bottom: 3px black solid;
+    position: relative;
+    margin-left: 40vw;
+    left: 10vw;
+    bottom: 15vh;
+
+    border-bottom: 1px black solid;
   }
   #netLinks {
     position: absolute;
@@ -66,9 +72,9 @@
     align-items: center;
     justify-content: center;
     outline-color: rgba(0, 0, 0, 0.911);
-    outline-width: 3px;
+    outline-width: 0px;
     outline-style: solid;
-    height: 85vh;
+    height: 90vh;
     overflow: hidden;
     margin-bottom: 15vh;
   }
@@ -100,6 +106,7 @@
   }
   #bodyRow {
     width: 100%;
+    max-width: 100vw;
     display: flex;
     flex-direction: column;
   }
@@ -116,6 +123,27 @@
     padding-left: 1vw;
     border-left: 1px solid black;
   }
+  #knownTechs {
+    position: absolute;
+    width: 60vw;
+    top: 0vh;
+    left: 47vw;
+    margin-left: 1em;
+    font-size: 18px;
+  }
+  .knownTechList {
+    margin-top: 1em;
+    margin-left: -2em;
+    width: fit-content;
+  }
+
+  .knownTechList li {
+    line-height: 50px;
+    padding-left: 3em;
+    margin-top: -0.2em;
+    list-style-type: none;
+  }
+
   #projectSection {
     color: black;
     position: relative;
@@ -131,7 +159,7 @@
   }
   .myProject {
     width: 70vw;
-    max-height: 45vh;
+    min-height: 45vh;
     display: flex;
     flex-direction: row;
     margin-top: 4vh;
@@ -142,6 +170,8 @@
     margin-right: auto;
   }
   .projectLeftside {
+    position: relative;
+    min-height: 45vh;
     border-bottom-left-radius: 2em;
     border-top-left-radius: 2em;
     border: 1px solid black;
@@ -151,20 +181,23 @@
     background-color: #222f3e;
   }
   .projectRightside {
+    min-height: 45vh;
     background-position: center;
     border-top-right-radius: 2em;
     border-bottom-right-radius: 2em;
     border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
     width: 50%;
   }
-
   .projectLinks {
+    position: relative;
     color: white;
-    align-content: right;
     width: 10em;
-    height: 3em;
-    margin-top: 11em;
-    margin-right: 1em;
+    min-height: 3em;
+
     border: none;
     border-radius: 1em;
     background-color: #353b48;
@@ -192,14 +225,7 @@
     max-width: 30vw;
     text-align: left;
   }
-  #knownTechs {
-    position: absolute;
-    width: fit-content;
-    top: 3vh;
-    right: 5em;
-    margin-left: 40em;
-    font-size: 18px;
-  }
+
   #myFooter {
     padding-top: 5em;
     margin-top: 5vh;
@@ -313,6 +339,7 @@
     padding-left: 1em;
     padding-right: 1em;
   }
+
   #myProjects {
     color: white;
     margin-top: 5vh;
