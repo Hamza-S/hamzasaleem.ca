@@ -12,7 +12,12 @@ export const Projects = () => {
           <div class="projectLeftside">
             <h3>hamzasaleem.ca & personal blog</h3>
             <p>This website which is used to portray my skills and projects!</p>
-
+            <ul class="techsUsed">
+              <li>Node</li>
+              <li>React</li>
+              <li>Express</li>
+              <li>PostgreSQL</li>
+            </ul>
             <div>
               <button
                 class="projectLinks"
