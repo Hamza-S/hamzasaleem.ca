@@ -10,7 +10,7 @@ export const Projects = () => {
         <h1 id="projectSection">Projects</h1>
         <div class="myProject">
           <div class="projectLeftside">
-            <h3>hamzasaleem.ca & personal blog</h3>
+            <h3 class="projectTitle">hamzasaleem.ca</h3>
             <p>This website which is used to portray my skills and projects!</p>
             <ul class="techsUsed">
               <li>Node</li>

@@ -11,7 +11,7 @@ export const About = () => {
   return (
     <Element name="about">
       <div id="aboutMe" className="about">
-        <h1>About Me</h1>
+        <h1 id="aboutTitle">About Me</h1>
         <p id="homeText">
           Hi I'm Hamza. I am currently in my third year at York University for
           Computer Science. I have a love for technology, basketball, and the
