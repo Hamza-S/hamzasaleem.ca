@@ -5,6 +5,7 @@ import ReactHtmlParser, {
   convertNodeToElement,
   htmlparser2,
 } from "react-html-parser";
+import { animateScroll as scroll, Link, Element } from "react-scroll";
 
 class PostContainer extends Component {
   constructor(props) {
@@ -30,7 +31,9 @@ class PostContainer extends Component {
       .map(function (posts) {
         return [
           <li className="blogIndex">
-            <b class="indexDate">{posts.date}</b> {posts.title}
+            <Link duration={300} smooth={true} offset={-50} to={posts.title}>
+              <b class="indexDate">{posts.date}</b> - {posts.title}
+            </Link>
           </li>,
         ];
       });
@@ -42,11 +45,13 @@ class PostContainer extends Component {
       .reverse()
       .map(function (posts) {
         return [
-          <div className="row align-items-left" id="post">
-            <h1 id="postTitle"> {posts.title}</h1>
-            <h2 id="postDate">{posts.date}</h2>
-            <div id="postContent">{ReactHtmlParser(posts.body)}</div>
-          </div>,
+          <Element name={posts.title}>
+            <div className="row align-items-left" id="post">
+              <h1 id="postTitle"> {posts.title}</h1>
+              <h2 id="postDate">{posts.date}</h2>
+              <div id="postContent">{ReactHtmlParser(posts.body)}</div>
+            </div>
+          </Element>,
         ];
       });
     return titles;
@@ -71,7 +76,9 @@ class PostContainer extends Component {
               talk about.
             </p>
             <h5 id="aboutmeBlog">ENTRIES</h5>
-            <ul id="index">{this.processIndex()}</ul>
+            <div id="indexContainer">
+              <ul id="index">{this.processIndex()}</ul>
+            </div>
           </div>
 
           {this.processPosts()}

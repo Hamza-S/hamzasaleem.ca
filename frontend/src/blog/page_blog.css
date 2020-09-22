@@ -44,19 +44,20 @@
     font-weight: 700;
     font-size: 70px;
   }
-
-  #index {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
+  #indexContainer {
     width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  #index {
     list-style: none;
-    margin: 0;
-    padding: 0;
+    width: fit-content;
+    margin-left: 2vw;
   }
   .indexDate {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   #post {
