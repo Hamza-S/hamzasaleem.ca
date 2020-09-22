@@ -29,10 +29,10 @@ class PostContainer extends Component {
       .reverse()
       .map(function (posts) {
         return [
-          <div className="row align-items-center" id="post">
+          <div className="row align-items-left" id="post">
             <h1 id="postTitle"> {posts.title}</h1>
             <h2 id="postDate">{posts.date}</h2>
-            {ReactHtmlParser(posts.body)}
+            <div id="postContent">{ReactHtmlParser(posts.body)}</div>
           </div>,
         ];
       });
@@ -47,8 +47,9 @@ class PostContainer extends Component {
         <div className="container" id="postContainer">
           <div className="row align-items-center" id="blogfirstRow">
             <h1 id="title">
-              <b>My Blog</b>
+              <b>Hamza's Blog</b>
             </h1>
+            <h5 id="aboutmeBlog">ABOUT ME</h5>
             <p id="intro">
               Welcome to my blog! My name is Hamza I am an undergraduate student
               at York University studying Computer Science. This blog consists
@@ -56,6 +57,7 @@ class PostContainer extends Component {
               software development, or really anything on my mind that I want to
               talk about.
             </p>
+            <h5 id="aboutmeBlog">ENTRIES</h5>
           </div>
 
           {this.processPosts()}
