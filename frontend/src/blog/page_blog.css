@@ -36,9 +36,9 @@ html {
   }
   #aboutmeBlog {
     margin-top: 3vh;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: bold;
-    color: #0984e3;
+    color: #e66767;
   }
   #blogfirstRow {
     float: none;
@@ -64,9 +64,10 @@ html {
     justify-content: center;
   }
   #index {
+    color: #007bff;
     list-style: none;
     width: fit-content;
-    font-size: 18px;
+    font-size: 16px;
   }
   #index li {
     cursor: pointer;
@@ -75,7 +76,7 @@ html {
     color: rgb(112, 110, 110);
   }
   .indexDate {
-    font-size: 17px;
+    font-size: 15px;
   }
 
   #post {
@@ -95,7 +96,6 @@ html {
     color: #0a3d62;
   }
   #postDate {
-    margin-left: 0.5vw;
     font-size: 20px;
     margin-bottom: 3vh;
   }
