@@ -6,20 +6,20 @@ import { HomeNav } from "./nav";
 
 export const Header = () => {
   const name = useSpring({
-    config: { duration: 1000 },
-    delay: 100,
+    config: { duration: 600 },
+    delay: 20,
     opacity: 1,
     from: { opacity: 0 },
   });
   const title = useSpring({
-    config: { duration: 1000 },
-    delay: 800,
+    config: { duration: 600 },
+    delay: 500,
     opacity: 1,
     from: { opacity: 0 },
   });
   const intro = useSpring({
-    config: { duration: 1000 },
-    delay: 1600,
+    config: { duration: 600 },
+    delay: 1000,
     opacity: 1,
     from: { opacity: 0 },
   });

@@ -67,7 +67,7 @@ class PostContainer extends Component {
             <h1 id="title">
               <b>Hamza's Blog</b>
             </h1>
-            <h5 id="aboutmeBlog">ABOUT ME</h5>
+            <h5 id="aboutmeBlog">About Me</h5>
             <p id="intro">
               Welcome to my blog! My name is Hamza I am an undergraduate student
               at York University studying Computer Science. This blog consists
@@ -75,7 +75,7 @@ class PostContainer extends Component {
               software development, or really anything on my mind that I want to
               talk about.
             </p>
-            <h5 id="aboutmeBlog">ENTRIES</h5>
+            <h5 id="aboutmeBlog">Entries</h5>
             <div id="indexContainer">
               <ul id="index">{this.processIndex()}</ul>
             </div>

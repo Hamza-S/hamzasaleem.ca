@@ -163,17 +163,20 @@
     flex-direction: row;
     margin-top: 4vh;
     border: 1px solid black;
-    border-radius: 2em;
+    border-radius: 1em;
     background-color: #222f3e;
     padding: 0;
     margin-right: auto;
+    -webkit-box-shadow: 0px 9px 17px 0px rgba(0, 0, 0, 0.23);
+    -moz-box-shadow: 0px 9px 17px 0px rgba(0, 0, 0, 0.23);
+    box-shadow: 0px 9px 17px 0px rgba(0, 0, 0, 0.23);
   }
   .projectLeftside {
     position: relative;
     min-height: 45vh;
-    border-bottom-left-radius: 2em;
-    border-top-left-radius: 2em;
-    border: 1px solid black;
+    border-bottom-left-radius: 1em;
+    border-top-left-radius: 1em;
+
     width: 50%;
     padding: 3em;
     padding-top: 4em;
@@ -182,9 +185,9 @@
   .projectRightside {
     min-height: 45vh;
     background-position: center;
-    border-top-right-radius: 2em;
-    border-bottom-right-radius: 2em;
-    border: 1px solid black;
+    border-top-right-radius: 1em;
+    border-bottom-right-radius: 1em;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -402,7 +405,7 @@
     margin-top: 5vh;
     width: 100%;
     top: 0vh;
-    font-weight: bold;
+
     font-size: 18px;
   }
   .knownTechList {
@@ -442,10 +445,13 @@
     flex-direction: column;
     margin-top: 4vh;
     border: 1px solid black;
-    border-radius: 2em;
+    border-radius: 1em;
     background-color: #222f3e;
     padding: 0;
     margin-right: auto;
+    -webkit-box-shadow: 0px 9px 17px 0px rgba(0, 0, 0, 0.23);
+    -moz-box-shadow: 0px 9px 17px 0px rgba(0, 0, 0, 0.23);
+    box-shadow: 0px 9px 17px 0px rgba(0, 0, 0, 0.23);
   }
   .projectTitle {
     font-size: 25px;
@@ -458,9 +464,8 @@
     justify-content: center;
     text-align: center;
     min-height: 45vh;
-    border-top-right-radius: 2em;
-    border-top-left-radius: 2em;
-    border: 1px solid black;
+    border-top-right-radius: 1em;
+    border-top-left-radius: 1em;
     width: 100%;
     padding-top: 0em;
     font-size: 14px;
@@ -471,9 +476,9 @@
   .projectRightside {
     min-height: 45vh;
     background-position: center;
-    border-bottom-left-radius: 2em;
-    border-bottom-right-radius: 2em;
-    border: 1px solid black;
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+
     width: 100%;
   }
   .projectLinks {
@@ -545,10 +550,6 @@
   .iconCredits {
     margin-top: 2em;
   }
-}
-#construct {
-  font-size: 17px;
-  font-style: italic;
 }
 a {
   text-decoration: none;

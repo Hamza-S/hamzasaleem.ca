@@ -1,3 +1,10 @@
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+html {
+  width: 100%;
+}
 @media screen and (min-width: 769px) {
   #Blog {
     flex-direction: column;
@@ -8,7 +15,6 @@
     width: 100vw;
     height: auto;
     overflow: auto;
-    border-top: 2px solid black;
   }
   #postContainer {
     font-family: "Open Sans";
@@ -25,11 +31,14 @@
     justify-content: center;
     align-content: center;
     text-align: center;
-    margin-bottom: 5vh;
+    margin-bottom: 2vh;
+    font-size: 17px;
   }
   #aboutmeBlog {
     margin-top: 3vh;
-    border-bottom: 1px solid black;
+    font-size: 20px;
+    font-weight: bold;
+    color: #0984e3;
   }
   #blogfirstRow {
     float: none;
@@ -37,10 +46,13 @@
     margin-bottom: 10vh;
     max-width: fit-content;
     flex-direction: column;
+    border-bottom: 1px solid black;
+    box-shadow: 10px #940c0c;
+    padding-bottom: 8vh;
   }
 
   #title {
-    margin-top: 5vh;
+    margin-top: 8vh;
     font-weight: 700;
     font-size: 70px;
   }
@@ -54,10 +66,16 @@
   #index {
     list-style: none;
     width: fit-content;
-    margin-left: 2vw;
+    font-size: 18px;
+  }
+  #index li {
+    cursor: pointer;
+  }
+  #index li:hover {
+    color: rgb(112, 110, 110);
   }
   .indexDate {
-    font-size: 14px;
+    font-size: 17px;
   }
 
   #post {
@@ -74,6 +92,7 @@
   }
   #postTitle {
     font-size: 30x;
+    color: #0a3d62;
   }
   #postDate {
     margin-left: 0.5vw;
