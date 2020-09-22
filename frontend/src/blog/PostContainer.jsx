@@ -23,6 +23,19 @@ class PostContainer extends Component {
     this.fetchPosts();
   }
 
+  processIndex() {
+    let indices = this.state.posts
+      .slice(0)
+      .reverse()
+      .map(function (posts) {
+        return [
+          <li className="blogIndex">
+            <b class="indexDate">{posts.date}</b> {posts.title}
+          </li>,
+        ];
+      });
+    return indices;
+  }
   processPosts() {
     let titles = this.state.posts
       .slice(0)
@@ -58,6 +71,7 @@ class PostContainer extends Component {
               talk about.
             </p>
             <h5 id="aboutmeBlog">ENTRIES</h5>
+            <ul id="index">{this.processIndex()}</ul>
           </div>
 
           {this.processPosts()}

@@ -45,6 +45,20 @@
     font-size: 70px;
   }
 
+  #index {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .indexDate {
+    font-size: 12px;
+  }
+
   #post {
     margin-left: 8em;
     margin-right: 8em;
@@ -61,10 +75,12 @@
     font-size: 30x;
   }
   #postDate {
+    margin-left: 0.5vw;
     font-size: 20px;
     margin-bottom: 3vh;
   }
   #postContent {
+    font-size: 18px;
     max-width: 100%;
     overflow: hidden;
   }
