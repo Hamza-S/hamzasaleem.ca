@@ -1,6 +1,7 @@
 import React from "react";
-import "./App.css";
-import "./blog/page_blog.css";
+import "./home/home_mobile.css";
+import "./home/home.css";
+import "./blog/blog.css";
 import { Home } from "./home/home";
 import Blog from "./blog/blog";
 import Admin from "./blog/admin";

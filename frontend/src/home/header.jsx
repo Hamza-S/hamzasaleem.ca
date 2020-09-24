@@ -25,7 +25,7 @@ export const Header = () => {
   });
 
   return (
-    <div className="col" id="aboutSec">
+    <div className="col h-100" id="aboutSec">
       <HomeNav />
       <div id="mainSplash">
         <NetLinks />

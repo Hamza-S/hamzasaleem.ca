@@ -1,11 +1,17 @@
 body {
   width: 100%;
   overflow-x: hidden;
+  height: 100%;
 }
 html {
   width: 100%;
+  height: 100%;
 }
 @media screen and (min-width: 769px) {
+  .fill {
+    min-height: 100%;
+    height: 100%;
+  }
   #Blog {
     flex-direction: column;
     align-items: center;
@@ -13,14 +19,14 @@ html {
     background-color: rgb(250, 250, 250);
     margin: 0;
     width: 100vw;
-    height: auto;
+    min-height: 100%;
     overflow: auto;
   }
   #postContainer {
     font-family: "Open Sans";
     background-color: rgb(250, 250, 250);
     min-width: 58vw;
-    height: 100%;
+    min-height: 100%;
     overflow: auto;
   }
   #intro {
@@ -49,6 +55,7 @@ html {
     border-bottom: 1px solid black;
     box-shadow: 10px #940c0c;
     padding-bottom: 8vh;
+    min-height: 100%;
   }
 
   #title {

@@ -15,9 +15,7 @@ export const Home = () => {
   });
   return (
     <div className="container" id="appContainer">
-      <div className="row align-items-start" id="firstRow">
-        <Header />
-      </div>
+      <Header />
       <div className="row align-items-center" id="bodyRow">
         <About />
       </div>
