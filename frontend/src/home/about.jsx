@@ -19,7 +19,7 @@ export const About = () => {
         <p id="homeText">
           Hello! I'm Hamza, a software developer and fourth year undergraduate
           student at <b id="yorkU">York University</b> majoring in Computer
-          Science, and I'm currently searching for summer 2021 internship
+          Science, that is currently searching for summer 2021 internship
           opportunities.
         </p>
         <p id="homeText">

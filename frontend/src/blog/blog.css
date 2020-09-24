@@ -57,7 +57,7 @@ html {
   #title {
     margin-top: 8vh;
     font-weight: 700;
-    font-size: 70px;
+    font-size: 50px;
     color: #0a3d62;
   }
   #indexContainer {
@@ -145,7 +145,7 @@ html {
   }
   #aboutmeBlog {
     margin-top: 3vh;
-    font-size: 22px;
+    font-size: 20px;
     font-weight: bold;
     color: #f0b89a;
   }
@@ -165,7 +165,7 @@ html {
     color: #0a3d62;
     margin-top: 8vh;
     font-weight: 700;
-    font-size: 50px;
+    font-size: 40px;
   }
   #indexContainer {
     width: 100%;

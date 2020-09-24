@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Element } from "react-scroll";
 import github from "../images/github32.png";
 import link from "../images/link.png";
-import test from "../images/test.png";
+import proj1 from "../images/proj1Image.png";
 export const Projects = () => {
   return (
     <Element name="project">
@@ -36,7 +36,7 @@ export const Projects = () => {
           <div
             class="projectRightside"
             style={{
-              backgroundImage: "url(" + test + ")",
+              backgroundImage: "url(" + proj1 + ")",
               backgroundSize: "cover",
             }}
           ></div>
