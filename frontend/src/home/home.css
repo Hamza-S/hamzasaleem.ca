@@ -281,3 +281,13 @@ button:focus {
     margin-top: 2em;
   }
 }
+a {
+  text-decoration: none;
+}
+a:link,
+a:visited {
+  color: inherit;
+}
+a:hover {
+  color: inherit;
+}

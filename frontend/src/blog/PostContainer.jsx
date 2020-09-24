@@ -46,7 +46,7 @@ class PostContainer extends Component {
       .map(function (posts) {
         return [
           <Element name={posts.title}>
-            <div className="row align-items-left" id="post">
+            <div className="row align-items-left" class="post">
               <h1 id="postTitle"> {posts.title}</h1>
               <h2 id="postDate">{posts.date}</h2>
               <div id="postContent">{ReactHtmlParser(posts.body)}</div>
