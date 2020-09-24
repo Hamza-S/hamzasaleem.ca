@@ -62,23 +62,22 @@ button:focus {
     outline-width: 0px;
     outline-style: solid;
     overflow: hidden;
-    height: 90%;
     margin-bottom: 15vh;
   }
   #mainSplash {
     width: fit-content;
-    height: 55%;
+    height: fit-content;
   }
   #navBar {
     position: relative;
     margin-left: 40vw;
     left: 10vw;
-    bottom: 12vh;
+    bottom: 8vh;
   }
   .avatar {
     vertical-align: middle;
-    width: 200px;
-    height: 200px;
+    width: 175px;
+    height: 175px;
     border: 3px solid #f6e58d;
     border-radius: 50%;
   }
@@ -88,10 +87,10 @@ button:focus {
     align-items: center;
   }
   .name {
-    font-size: 70px;
+    font-size: 60px;
   }
   .title {
-    font-size: 45px;
+    font-size: 35px;
     margin-top: -8px;
     color: #f6e58d;
   }
@@ -116,7 +115,7 @@ button:focus {
     float: none;
     white-space: pre-line;
     width: 30em;
-    font-size: 17px;
+    font-size: 15px;
   }
 
   #bodyRow {

@@ -40,7 +40,7 @@ html {
     margin-top: 3vh;
     font-size: 22px;
     font-weight: bold;
-    color: #e66767;
+    color: #d4a58c;
   }
   #blogfirstRow {
     float: none;
@@ -58,6 +58,7 @@ html {
     margin-top: 8vh;
     font-weight: 700;
     font-size: 70px;
+    color: #0a3d62;
   }
   #indexContainer {
     width: 100%;
@@ -82,15 +83,8 @@ html {
     font-size: 15px;
   }
 
-  #post {
-    margin-left: 8em;
-    margin-right: 8em;
+  .post {
     margin-bottom: 8vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    align-content: left;
-    text-align: left;
     padding-bottom: 5vh;
     border-bottom: solid 1px black;
   }
@@ -144,7 +138,7 @@ html {
     margin-top: 3vh;
     font-size: 22px;
     font-weight: bold;
-    color: #e66767;
+    color: #f0b89a;
   }
   #blogfirstRow {
     float: none;
@@ -153,12 +147,13 @@ html {
     max-width: fit-content;
     flex-direction: column;
     border-bottom: 1px solid black;
-    box-shadow: 10px #940c0c;
+
     padding-bottom: 8vh;
     min-height: 100%;
   }
 
   #title {
+    color: #0a3d62;
     margin-top: 8vh;
     font-weight: 700;
     font-size: 50px;
