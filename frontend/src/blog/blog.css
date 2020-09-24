@@ -101,6 +101,15 @@ html {
     max-width: 100%;
     overflow: hidden;
   }
+  #toTop {
+    color: #007bff;
+  }
+  #blogFooter {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 5vh;
+  }
 }
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
@@ -199,5 +208,14 @@ html {
     font-size: 17px;
 
     overflow: hidden;
+  }
+  #toTop {
+    color: #007bff;
+  }
+  #blogFooter {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 5vh;
   }
 }

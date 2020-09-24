@@ -6,6 +6,10 @@ import reactLogo from "../images/icons8-react-native-48.png";
 import nodeLogo from "../images/icons8-nodejs-48.png";
 import javaLogo from "../images/icons8-java-48.png";
 import dbLogo from "../images/icons8-database-48.png";
+import c from "../images/icons8-c-programming-48.png";
+import git from "../images/icons8-git-48.png";
+import htmlIcon from "../images/icons8-html-5-48.png";
+import cssIcon from "../images/icons8-css3-48.png";
 
 export const About = () => {
   return (
@@ -81,7 +85,41 @@ export const About = () => {
                 backgroundRepeat: "no-repeat",
               }}
             >
-              DMBS/SQL
+              SQL/DB
+            </li>
+          </ul>
+          <ul class="knownTechList2">
+            <li
+              style={{
+                backgroundImage: "url(" + c + ")",
+                backgroundRepeat: "no-repeat",
+              }}
+            >
+              C
+            </li>
+            <li
+              style={{
+                backgroundImage: "url(" + git + ")",
+                backgroundRepeat: "no-repeat",
+              }}
+            >
+              Git
+            </li>
+            <li
+              style={{
+                backgroundImage: "url(" + htmlIcon + ")",
+                backgroundRepeat: "no-repeat",
+              }}
+            >
+              HTML
+            </li>
+            <li
+              style={{
+                backgroundImage: "url(" + cssIcon + ")",
+                backgroundRepeat: "no-repeat",
+              }}
+            >
+              CSS
             </li>
           </ul>
         </div>

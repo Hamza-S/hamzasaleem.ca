@@ -82,6 +82,12 @@ class PostContainer extends Component {
           </div>
 
           {this.processPosts()}
+          <div id="blogFooter">
+            <a id="toTop" onClick={() => scroll.scrollToTop()}>
+              Go to top
+            </a>
+            <h7>By Hamza Saleem</h7>
+          </div>
         </div>
       );
     }

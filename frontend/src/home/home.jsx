@@ -16,13 +16,13 @@ export const Home = () => {
   return (
     <div className="container" id="appContainer">
       <Header />
-      <div className="row align-items-center" id="bodyRow">
+      <div className="row align-items-center" id="aboutRow">
         <About />
       </div>
-      <div className="row align-items-center" id="bodyRow">
+      <div className="row align-items-center" id="projectRow">
         <Projects />
       </div>
-      <div className="row align-items-start" id="firstRow">
+      <div className="row align-items-start" id="footerRow">
         <Footer />
       </div>
     </div>
