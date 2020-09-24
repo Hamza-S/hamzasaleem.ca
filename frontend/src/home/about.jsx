@@ -13,17 +13,25 @@ export const About = () => {
       <div id="aboutMe" className="about">
         <h1 id="aboutTitle">About Me</h1>
         <p id="homeText">
-          Hi I'm Hamza. I am currently in my third year at York University for
-          Computer Science. I have a love for technology, basketball, and the
-          arts. I like working with a full-stack, check out some of my work and
-          skills below!
+          Hello! I'm Hamza, a software developer and fourth year undergraduate
+          student at <b id="yorkU">York University</b> majoring in Computer
+          Science, and I'm currently searching for summer 2021 internship
+          opportunities.
         </p>
         <p id="homeText">
-          Hi I'm Hamza. I am currently in my third year at York University for
-          Computer Science. I have a love for technology, basketball, and the
-          arts. I like working with a full-stack, check out some of my work and
-          skills below!
+          I like to work with a full-stack, and{" "}
+          <h7 id="homeHighlight">
+            {" "}
+            strive to deliver applications that are effecient, reliable,
+            visually appealing, and user-friendly.
+          </h7>
         </p>
+        <p id="homeText">
+          Apart from development, I'm a huge fan of basketball (more
+          specifically the 2019-2020 NBA champions - the Toronto Raptors),
+          movies, and music!
+        </p>
+
         <div id="knownTechs">
           <h7>Some technologies that I'm familiar with:</h7>
           <ul class="knownTechList">
