@@ -69,15 +69,11 @@
     margin-bottom: 15vh;
   }
   #mainSplash {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     width: fit-content;
     height: 55%;
+    display: block;
   }
   #info {
-    padding: 0.5em;
-    padding-left: 3vw;
     padding-right: 3vw;
     white-space: pre-line;
     width: 100%;
