@@ -30,6 +30,7 @@
     font-size: 45px;
   }
   .title {
+    margin-top: 10%;
     font-size: 35px;
     margin-top: -8px;
     color: #f6e58d;
@@ -43,6 +44,7 @@
     width: fit-content;
     height: fit-content;
     margin-top: 3vh;
+    margin-bottom: auto;
     left: 0;
   }
   .socialLink {
@@ -70,7 +72,7 @@
   }
   #mainSplash {
     width: fit-content;
-    height: 55%;
+    height: fit-content;
     display: block;
   }
   #info {
