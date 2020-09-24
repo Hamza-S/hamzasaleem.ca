@@ -19,7 +19,6 @@
     height: 175px;
     border: 3px solid #f6e58d;
     border-radius: 50%;
-    margin-bottom: 20%;
   }
   #avatarContainer {
     display: flex;
@@ -74,9 +73,9 @@
     width: fit-content;
     height: fit-content;
     display: block;
+    padding-left: 0.4em;
   }
   #info {
-    padding-right: 3vw;
     white-space: pre-line;
     width: 100%;
     font-size: 15px;
