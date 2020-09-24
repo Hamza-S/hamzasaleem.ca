@@ -15,7 +15,7 @@ class PostContainer extends Component {
 
   fetchPosts() {
     axios
-      .get("http://localhost:9000/get_posts")
+      .get("http://localhost:8080/get_posts")
       .then((res) => res.data)
       .then((res) => this.setState({ posts: res }));
   }

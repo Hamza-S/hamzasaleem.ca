@@ -12,13 +12,6 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 function App() {
   return (
     <Router>
-      <meta
-        name="githubicon_author"
-        content="https://www.alfredocreates.com/"
-      ></meta>
-      <meta name="linkedinicon_author" content="Neil Hainsworth"></meta>
-      <meta name="linkicon_author" content="http://www.freepik.com"></meta>
-
       <link
         href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap"
         rel="stylesheet"

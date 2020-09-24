@@ -29,7 +29,7 @@ class Admin extends Component {
     const data = this.state;
     if (auth.isAdmin()) {
       const res = await axios
-        .post("http://localhost:9000/newpost", {
+        .post("http://localhost:8080/newpost", {
           id: data.id,
           title: data.title,
           date: data.date,
