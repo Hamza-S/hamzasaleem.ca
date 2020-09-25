@@ -9,6 +9,7 @@ html {
 }
 @media screen and (min-width: 769px) {
   #Blog {
+    font-family: "Open Sans", sans-serif;
     flex-direction: column;
     align-items: center;
     font-family: "Roboto Slab", serif;
@@ -114,6 +115,7 @@ html {
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
   #Blog {
+    font-family: "Open Sans", sans-serif;
     flex-direction: column;
     align-items: center;
     background-color: rgb(250, 250, 250);
