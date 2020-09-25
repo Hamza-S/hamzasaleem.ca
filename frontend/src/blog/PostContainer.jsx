@@ -15,7 +15,7 @@ class PostContainer extends Component {
 
   fetchPosts() {
     axios
-      .get("https://159.89.112.227/get_posts")
+      .get("https://hamzasaleem.ca/get_posts")
       .then((res) => res.data)
       .then((res) => this.setState({ posts: res }));
   }
