@@ -9,7 +9,7 @@ class Auth {
 
   async login(user, pass) {
     const res = await axios
-      .post("http://localhost:8080/auth", {
+      .post("http://159.89.112.227:8080/auth", {
         user: user,
         pass: pass,
       })

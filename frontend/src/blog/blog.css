@@ -11,7 +11,7 @@ html {
   #Blog {
     flex-direction: column;
     align-items: center;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Roboto Slab", serif;
     background-color: rgb(250, 250, 250);
     margin: 0;
     width: 100vw;
@@ -19,7 +19,7 @@ html {
     overflow: auto;
   }
   #postContainer {
-    font-family: "Open Sans";
+    font-family: "Roboto Slab", serif;
     background-color: rgb(250, 250, 250);
     min-width: 58vw;
     min-height: 100%;
