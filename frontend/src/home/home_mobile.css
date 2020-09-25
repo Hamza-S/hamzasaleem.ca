@@ -30,13 +30,13 @@
   }
   .title {
     margin-top: 10%;
-    font-size: 35px;
+    font-size: 30px;
     margin-top: -8px;
     color: #f6e58d;
   }
   #navBar {
     position: relative;
-    bottom: 8vh;
+    bottom: 4vh;
   }
   #netLinks {
     position: absolute;
