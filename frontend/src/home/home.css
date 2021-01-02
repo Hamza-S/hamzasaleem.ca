@@ -31,13 +31,47 @@ button:focus {
   }
 }
 @media screen and (min-height: 601px) and (min-width: 769px) {
+  .avatar {
+    vertical-align: middle;
+    width: 175px;
+    height: 175px;
+    border: 3px solid #f6e58d;
+    border-radius: 50%;
+  }
   #navBar {
     position: relative;
     margin-left: 40vw;
     left: 10vw;
     bottom: 8vh;
   }
+  .name {
+    font-size: 60px;
+  }
+  .title {
+    font-size: 35px;
+    margin-top: -8px;
+    color: #f6e58d;
+  }
 }
+@media (orientation: portrait) {
+  .avatar {
+    vertical-align: middle;
+    width: 250px;
+    height: 250px;
+    border: 3px solid #f6e58d;
+    border-radius: 50%;
+  }
+  .name {
+    font-size: 90px;
+  }
+  .title {
+    font-size: 50px;
+    margin-top: -8px;
+    color: #f6e58d;
+  }
+  /* portrait styles */
+}
+
 @media screen and (min-width: 769px) {
   .App {
     margin: 0;
@@ -101,25 +135,11 @@ button:focus {
     width: fit-content;
     height: fit-content;
   }
-  .avatar {
-    vertical-align: middle;
-    width: 175px;
-    height: 175px;
-    border: 3px solid #f6e58d;
-    border-radius: 50%;
-  }
+
   #avatarContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  .name {
-    font-size: 60px;
-  }
-  .title {
-    font-size: 35px;
-    margin-top: -8px;
-    color: #f6e58d;
   }
 
   #netLinks {
@@ -205,7 +225,7 @@ button:focus {
   }
   .myProject {
     width: 70vw;
-    min-height: 45vh;
+    min-height: fit-content;
     display: flex;
     flex-direction: row;
     margin-top: 4vh;
@@ -220,7 +240,7 @@ button:focus {
   }
   .projectLeftside {
     position: relative;
-    min-height: 45vh;
+    min-height: fit-content;
     border-bottom-left-radius: 1em;
     border-top-left-radius: 1em;
     width: 50%;
@@ -229,7 +249,7 @@ button:focus {
     background-color: #222f3e;
   }
   .projectRightside {
-    min-height: 45vh;
+    min-height: fit-content;
     background-position: center;
     border-top-right-radius: 1em;
     border-bottom-right-radius: 1em;

@@ -12,22 +12,22 @@ html {
     font-family: "Open Sans", sans-serif;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(250, 250, 250);
+
     margin: 0;
-    width: 100vw;
+    width: 100%;
     min-height: 100%;
     overflow: auto;
   }
   #postContainer {
     font-family: "Open Sans", sans-serif;
-    background-color: rgb(250, 250, 250);
+
     min-width: 58vw;
     min-height: 100%;
     overflow: auto;
   }
   #intro {
     margin-top: 1vh;
-    max-width: 60%;
+    max-width: 30%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -40,25 +40,26 @@ html {
     margin-top: 3vh;
     font-size: 22px;
     font-weight: bold;
-    color: #d4a58c;
+    color: #f6e58d;
   }
   #blogfirstRow {
     float: none;
     margin: 0 auto;
-    margin-bottom: 10vh;
+    margin-bottom: 5vh;
     max-width: fit-content;
     flex-direction: column;
-    border-bottom: 1px solid black;
     box-shadow: 10px #940c0c;
     padding-bottom: 8vh;
+    width: 100vw;
     min-height: 100%;
+    background-color: #273c75;
+    color: white;
   }
 
   #title {
     margin-top: 8vh;
     font-weight: 700;
     font-size: 50px;
-    color: #0a3d62;
   }
   #indexContainer {
     width: 100%;
@@ -67,17 +68,35 @@ html {
     flex-direction: row;
     justify-content: center;
   }
-  #index {
-    color: #007bff;
+  #entriesTitle {
+    font-size: 22px;
+    font-weight: bold;
+    color: black;
+  }
+  #entries {
+    margin: 0 auto;
+    margin-bottom: 5vh;
+    max-width: fit-content;
+    flex-direction: column;
+    box-shadow: 10px #940c0c;
+    padding-bottom: 8vh;
+    width: 100vw;
+    min-height: 100%;
+
+    color: white;
+  }
+  #entryTable td {
+    padding: 0 50px;
+  }
+  .index {
+    color: #2177da;
     list-style: none;
     width: fit-content;
     font-size: 16px;
     margin-right: 2.2%;
-  }
-  #index li {
     cursor: pointer;
   }
-  #index li:hover {
+  .index:hover {
     color: rgb(112, 110, 110);
   }
   .indexDate {
@@ -104,6 +123,7 @@ html {
   }
   #toTop {
     color: #007bff;
+    cursor: pointer;
   }
   #blogFooter {
     display: flex;
@@ -156,7 +176,6 @@ html {
     max-width: fit-content;
     flex-direction: column;
     border-bottom: 1px solid black;
-
     padding-bottom: 8vh;
     min-height: 100%;
   }

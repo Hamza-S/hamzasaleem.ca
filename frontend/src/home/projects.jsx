@@ -3,6 +3,7 @@ import { Element } from "react-scroll";
 import github from "../images/github32.png";
 import link from "../images/link.png";
 import proj1 from "../images/proj1Image.png";
+import proj2 from "../images/instabook.png";
 export const Projects = () => {
   return (
     <Element name="project">
@@ -37,6 +38,36 @@ export const Projects = () => {
             class="projectRightside"
             style={{
               backgroundImage: "url(" + proj1 + ")",
+              backgroundSize: "cover",
+            }}
+          ></div>
+        </div>
+        <div class="myProject">
+          <div class="projectLeftside">
+            <h3 class="projectTitle">InstaBook</h3>
+            <p>
+              An e-commerce full-stack application to sell books, add reviews,
+              and more.
+            </p>
+            <ul class="techsUsed">
+              <li>Java</li>
+            </ul>
+            <div>
+              <button
+                class="projectLinks"
+                onClick={() =>
+                  window.open("https://github.com/Hamza-S/BookStore", "_blank")
+                }
+              >
+                <img src={github} class="linkButton" />
+                Code
+              </button>
+            </div>
+          </div>
+          <div
+            class="projectRightside"
+            style={{
+              backgroundImage: "url(" + proj2 + ")",
               backgroundSize: "cover",
             }}
           ></div>

@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { HomeNav } from "../home/nav";
 import axios from "axios";
 import ReactHtmlParser, {
   processNodes,
@@ -7,7 +8,7 @@ import ReactHtmlParser, {
 } from "react-html-parser";
 import { animateScroll as scroll, Link, Element } from "react-scroll";
 
-class PostContainer extends Component {
+class BlogIntro extends Component {
   constructor(props) {
     super(props);
     this.state = { posts: [] };
@@ -41,36 +42,32 @@ class PostContainer extends Component {
       });
     return indices;
   }
-  processPosts() {
-    let titles = this.state.posts
-      .slice(0)
-      .reverse()
-      .map(function (posts) {
-        return [
-          <Element name={posts.title}>
-            <div className="row align-items-left" class="post">
-              <h1 id="postTitle"> {posts.title}</h1>
-              <h2 id="postDate">{posts.date}</h2>
-              <div id="postContent">{ReactHtmlParser(posts.body)}</div>
-            </div>
-          </Element>,
-        ];
-      });
-    return titles;
-  }
 
   render() {
     if (!this.state.posts) {
       return <div>Loading...</div>;
     } else {
       return (
-        <div className="container" id="postContainer">
-          {this.processPosts()}
-          <div id="blogFooter">
-            <a id="toTop" onClick={() => scroll.scrollToTop()}>
-              Go to top
-            </a>
-            <h7>By Hamza Saleem</h7>
+        <div id="introContainer">
+          <div className="row align-items-center" id="blogfirstRow">
+            <h1 id="title">
+              <b>Hamza's Blog</b>
+            </h1>
+            <h5 id="aboutmeBlog">About Me</h5>
+            <p id="intro">
+              Welcome to my blog! My name is Hamza I am an undergraduate student
+              at York University studying Computer Science. This blog consists
+              of posts ranging from world issues, television shows, movies,
+              software development, or really anything on my mind that I want to
+              talk about.
+            </p>
+          </div>
+
+          <div className="row align-items-center" id="entries">
+            <h5 id="entriesTitle">Entries</h5>
+            <div id="indexContainer">
+              <table id="entryTable">{this.processIndex()}</table>
+            </div>
           </div>
         </div>
       );
@@ -78,4 +75,4 @@ class PostContainer extends Component {
   }
 }
 
-export default PostContainer;
+export default BlogIntro;

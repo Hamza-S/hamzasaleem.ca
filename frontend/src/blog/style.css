@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+Body {
+  background-color: #66ffff;
+}
+
+Form {
+  display: grid;
+  grid-template-columns: [labels]auto [input] auto;
+  grid-auto-flow: row;
+  width: 500px;
+  margin: auto;
+  font-family: Calibri, Ariel, sans-serif;
+  font-size: 16px;
+  padding: 8px;
+  border: 1px solid #999;
+  background-color: white;
+}
+
+Form > label {
+  grid-column: labels;
+  grid-row: auto;
+  text-align: right;
+}
+
+Form > input {
+  grid-column: input;
+  grid-row: auto;
+  padding: 0.2rem;
+  margin-left: 10px;
+  border: 1px solid #e6e6e6;
+}
+
+h1 {
+  text-align: center;
+}
