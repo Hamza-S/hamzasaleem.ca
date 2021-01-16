@@ -4,11 +4,7 @@
   "private": true,
   "dependencies": {
     "axios": "^0.21.1",
-<<<<<<< HEAD
     "bootstrap": "^4.5.3",
-=======
-    "bootstrap": "^4.5.2",
->>>>>>> 81456ebd7b2fbe477879448b392c41de2fcbc8e4
     "express": "^4.17.1",
     "jquery": "^3.5.1",
     "react": "^17.0.1",
