@@ -1,1 +1,1 @@
-Portfolio & blog website using React, Express, and postgreSQL. 
+Portfolio & blog website using React, Express, and postgreSQL. Deployed on a DigitalOcean droplet. 
